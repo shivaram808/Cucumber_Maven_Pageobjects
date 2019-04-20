@@ -8,7 +8,7 @@ public class hooks extends BaseClass{
 	
 	
 	@Before
-	public void beforehook()
+	public void beforehook() throws Exception
 		{
 			System.out.println("Before hook has been trigerred!!");
 			
