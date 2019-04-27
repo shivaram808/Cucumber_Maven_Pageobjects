@@ -1,34 +1,48 @@
 package TestScripts;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 
-import PageObjects.LoginPage;
+
+import org.openqa.selenium.By;
+import org.testng.Assert;
+
+import PageObjects.MyAccount;
 import TestBase.BaseClass;
-import cucumber.api.java.en.Given;
+import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
 
 public class LoginVerifyScenarios extends BaseClass{
 
 	
-	
-	
-	@Given("^Login to TS RTC website using valid username and password$")
-    public void login_to_TS_RTC_website_using_valid_username_and_password() throws Exception {
-		
-		LoginPage obj = new LoginPage(driver);
-		obj.login();
-	}
+    @When("^I Click on My Account page$")
+    public void i_click_on_my_account_page() throws Throwable {
 
-	@Then("^TSRTC Home page should be displayed$")
-    public void tsrtc_Home_page_should_be_displayed() throws Exception {
-		
-		WebElement Logout_button = driver.findElement(By.xpath("//a[@title='Logout']"));
-		
-				if(Logout_button.isDisplayed())
-		        System.out.println("Login Successfully!!");
-		
-	}
+    	
+    	MyAccount obj = new MyAccount(driver);
+    	obj.MyAccount_Click();
+    }
+
+    @And("^I update Issuing Authority as \"([^\"]*)\"$")
+    public void i_update_issuing_authority_as_something(String val) throws Throwable {
+
+    	driver.findElement(By.xpath("//input[@id='issueAuthority']")).sendKeys(val);
+    	driver.findElement(By.xpath("//input[@name='SaveBtn']")).click();
+    }
+    
+    @Then("^I should see successfully updated message$")
+    public void i_should_see_successfully_updated_message() throws Throwable {
+    	
+    	Thread.sleep(5000);
+
+    	boolean displayed = driver.findElement(By.xpath("//strong[contains(text(),'User \"shiva808\" successfully updated.')]")).isDisplayed();
+  
+    	if(displayed==true)    
+    	{
+    		Assert.assertTrue(true);
+    	}
+    }
+
+ 
 	
 	
 }
