@@ -22,7 +22,7 @@ public class LoginPage{
 	public void login()
 	{
 		driver.findElement(By.name("userName")).sendKeys("shiva808");
-		driver.findElement(By.name("password")).sendKeys("Shiva_689");
+		driver.findElement(By.name("password")).sendKeys("Shiva@689");
 		driver.findElement(By.name("submitBtn")).click();
 		
 	}

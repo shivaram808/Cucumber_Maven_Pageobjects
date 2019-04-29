@@ -70,7 +70,7 @@ public class Frequently_Asked_Programs{
 	
 // Program for pallendrome
 	
-	@Test
+	//@Test
 	public void pallendrome()
 	
 	{
@@ -93,7 +93,87 @@ public class Frequently_Asked_Programs{
 
 // Reverse of a String 
 	
+	//@Test
+   public void stringreverse()
+   {
+	   String name = "Shiva";
+	   
+	   System.out.println("     ");
+	   System.out.println("Reverse of String is :  ");
+	   
+	   for(int i=name.length()-1;i>=0 ;i--)
+	   {
+		   char rev = name.charAt(i);
+		   System.out.print(rev);
+		  
+	   }
+	   
+	   System.out.println("    ");
+	   System.out.println("    ");
+	   
+   }
+	
+	
+// Fibonacci Series
+	
+	//@Test
+	public void fibonacci()
+	{
+		int a = 1;
+		int b =2;
+		int c;
+		
+		 System.out.print(a+"   ");
+		 System.out.print(b+"   ");
+		 
+		 
+		for (int i=0; i<15;i++)
+		{
+			 c= a+b;
+			 System.out.print(c+"   ");
+			 
+			 a=b;
+			 b=c;
+		}
+	}	
+
+// Prime numbers from 1 to 100
+	//@Test	
+	public void primenumber()
+	{
+		
+		System.out.println(" Prime number are :  ");
+		
+		int j;
+		int i;
+		int rem;
+		
+		
+		for( i=2;i<=100;i++)
+		{
+			int count=0;
+			
+			for(j=2;j<=i;j++)
+			{
+				rem = i%j;
+				if(rem==0)
+				{
+					count = count+1;
+				}
+				
+		    }
+			
+			if(count<2)
+			{
+				System.out.print(i+ " ");
+		    }
+	    }
+	
+	}
+
 	
 	
 	
-}
+				
+	}
+	

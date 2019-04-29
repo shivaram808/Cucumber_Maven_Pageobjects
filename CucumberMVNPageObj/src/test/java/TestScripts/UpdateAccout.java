@@ -11,7 +11,7 @@ import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
-public class LoginVerifyScenarios extends BaseClass{
+public class  UpdateAccout extends BaseClass{
 
 	
     @When("^I Click on My Account page$")
