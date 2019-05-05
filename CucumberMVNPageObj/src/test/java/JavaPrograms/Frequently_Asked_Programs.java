@@ -1,27 +1,29 @@
 package JavaPrograms;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 
 import org.testng.annotations.Test;
 public class Frequently_Asked_Programs{
 
-// Number of Alphabets repeting in a word
-	//@Test
-	public void charcount()
-	{
-		String str = "Programming";
-		HashMap<Character, Integer> map = new HashMap<>();
-		for (char key : str.toCharArray()) {
-			if (map.containsKey(key)) {
-				int val = map.get(key);
-				map.put(key, val + 1);
-			} else {
-				map.put(key, 1);
-			}
-		}
-		System.out.println(map);
-	}
-	
+//// Number of Alphabets repeting in a word
+//	//@Test
+//	public void charcount()
+//	{
+//		String str = "Programming";
+//		HashMap<Character, Integer> map = new HashMap<>();
+//		for (char key : str.toCharArray()) {
+//			if (map.containsKey(key)) {
+//				int val = map.get(key);
+//				map.put(key, val + 1);
+//			} else {
+//				map.put(key, 1);
+//			}
+//		}
+//		System.out.println(map);
+//	}
+//	
 	
 //Number of words repeating in a sentence 
 	
@@ -172,7 +174,26 @@ public class Frequently_Asked_Programs{
 	}
 
 	
+// Working with array list
 	
+	@Test
+	public void arraylist()
+	{
+		ArrayList al = new ArrayList();
+		
+		al.add(20);
+		al.add("shiva");
+		al.add(1.25);
+		
+		System.out.println("values in array list are : "+al);	
+		Collections.reverse(al);
+		
+		System.out.println("Reverse of array list : "+ al);
+		
+				
+	}
+	
+
 	
 				
 	}

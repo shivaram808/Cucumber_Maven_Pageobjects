@@ -1,52 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
-    <line>
-      <![CDATA[<div "result">Login to TS RTC website using valid username and password (PASSED : 0s)</div>]]>
-    </line>
-    <line>
-      <![CDATA[<div "result">TSRTC Home page should be displayed (PASSED : 0s)</div>]]>
-    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="11213" started-at="2019-04-29T05:33:39Z" finished-at="2019-04-29T05:33:50Z">
+  <suite name="Default suite" duration-ms="51" started-at="2019-05-04T11:31:33Z" finished-at="2019-05-04T11:31:33Z">
     <groups>
-      <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:TestRunner.RunnerClass@5442a311]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
-      </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="11213" started-at="2019-04-29T05:33:39Z" finished-at="2019-04-29T05:33:50Z">
-      <class name="TestRunner.RunnerClass">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:TestRunner.RunnerClass@5442a311]" name="setUpClass" is-config="true" duration-ms="268" started-at="2019-04-29T05:33:39Z" finished-at="2019-04-29T05:33:39Z">
+    <test name="Default test" duration-ms="51" started-at="2019-05-04T11:31:33Z" finished-at="2019-05-04T11:31:33Z">
+      <class name="JavaPrograms.Frequently_Asked_Programs">
+        <test-method status="PASS" signature="arraylist()[pri:0, instance:JavaPrograms.Frequently_Asked_Programs@5e5792a0]" name="arraylist" duration-ms="17" started-at="2019-05-04T11:31:33Z" finished-at="2019-05-04T11:31:33Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:TestRunner.RunnerClass@5442a311]" name="runScenario" duration-ms="10901" started-at="2019-04-29T05:33:39Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-04-29T05:33:50Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Validate TS RTC user login"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["TS RTC Login Scenarios"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[<div "result">Login to TS RTC website using valid username and password (PASSED : 0s)</div>]]>
-            </line>
-            <line>
-              <![CDATA[<div "result">TSRTC Home page should be displayed (PASSED : 0s)</div>]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:TestRunner.RunnerClass@5442a311]" name="tearDownClass" is-config="true" duration-ms="4" started-at="2019-04-29T05:33:50Z" finished-at="2019-04-29T05:33:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- TestRunner.RunnerClass -->
+        </test-method> <!-- arraylist -->
+      </class> <!-- JavaPrograms.Frequently_Asked_Programs -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

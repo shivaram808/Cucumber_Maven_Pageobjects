@@ -1,4 +1,4 @@
-package TestScripts;
+package stepDefinition;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -17,6 +17,8 @@ public class VerifyLogin extends BaseClass{
 			LoginPage lp = new LoginPage(driver);
 			lp.login();
 			
+			System.out.println("Validating User Login Scenarios......");	
+			// Create a constructor and shift this message to the constructor
 
 		}
 

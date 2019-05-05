@@ -1,4 +1,4 @@
-package TestScripts;
+package stepDefinition;
 
 
 
@@ -20,6 +20,7 @@ public class  UpdateAccout extends BaseClass{
     	
     	MyAccount obj = new MyAccount(driver);
     	obj.MyAccount_Click();
+    	System.out.println("Validating MyAccount Scenarios......");
     }
 
     @And("^I update Issuing Authority as \"([^\"]*)\"$")
@@ -39,6 +40,7 @@ public class  UpdateAccout extends BaseClass{
     	if(displayed==true)    
     	{
     		Assert.assertTrue(true);
+    		System.out.println("My Account successfully updated with mentioned details");
     	}
     }
 
