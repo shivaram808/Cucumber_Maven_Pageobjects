@@ -27,6 +27,8 @@ public class Frequently_Asked_Programs{
 	
 //Number of words repeating in a sentence 
 	
+	private char[] cs;
+
 	//@Test
 	public void repeted_words()
 	{
@@ -176,7 +178,7 @@ public class Frequently_Asked_Programs{
 	
 // Working with array list
 	
-	@Test
+	//@Test
 	public void arraylist()
 	{
 		ArrayList al = new ArrayList();
@@ -193,8 +195,87 @@ public class Frequently_Asked_Programs{
 				
 	}
 	
-
+	//@Test
+	public void count_chars_sentance()
+	{
+		String str = "Today is monday";
+		
+		char c[] = str.toCharArray();
+		HashMap<Character, Integer> map = new HashMap();
+		
+		for(char key:c)
+		{
+			if(map.containsKey(key))
+			{
+				Integer val = map.get(key);
+				map.put(key, val+1);
+			}
+			else
+			{
+				map.put(key,1);
+			}
+		}
+		
+		System.out.println("number to times each charector repeted is"+map);
+		
+	}
 	
+// Pallendrome 
+	//@Test
+	public void pallendrome1()
+	
+	{
+		String str = "Madam";
+		String reverse = " ";
+		System.out.print("Reverse of given variable is :   ");
+		
+		for(int i=str.length()-1;i>=0;i--)
+		{
+			reverse = reverse+str.charAt(i);
+			
+		}
+		System.out.print(reverse);
+		System.out.println(" ");
+	}
+	
+	
+// Array sorting using Bubble sort
+	
+ @Test
+	
+	public void bubblesort()
+	{
+		int a[] = {4,2,6,1,3,5};
+		int temp;
+		System.out.println(a.length);
+		
+		System.out.print("Array before sorting :  ");
+		for (int k=0;k<a.length;k++)
+		{
+			System.out.print(a[k]);
+		}	
+		System.out.println(" ");
+		
+		for(int i=1;i<a.length-1;i++)
+		{
+			for(int j=0;j<a.length-i-1;j++)
+			{
+				if(a[j]>a[j+1])
+				{
+					temp = a[j];
+					a[j] = a[j+1];
+					a[j+1]=temp;
+				}
+			}
+		}
+		
+		System.out.print("Array After sorting :  ");
+		for (int k=0;k<a.length-1;k++)
+		{
+			System.out.print(a[k]);
+		}	
+		System.out.println(" ");
+	}
 				
 	}
 	
