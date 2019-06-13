@@ -3,13 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestRunner.RunnerClass">
+      <class name="JavaPrograms.Frequently_Asked_Programs">
         <methods>
-          <include name="setUpClass"/>
-          <include name="runScenario"/>
-          <include name="tearDownClass"/>
+          <include name="bubblesort"/>
         </methods>
-      </class> <!-- TestRunner.RunnerClass -->
+      </class> <!-- JavaPrograms.Frequently_Asked_Programs -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
